@@ -1,9 +1,9 @@
-# Understanding a Pretrained Vision Transformer
+﻿# Understanding a Pretrained Vision Transformer
 
 A step-by-step Jupyter notebook showing how a pretrained Vision Transformer (ViT) processes an image, from its pixels to an ImageNet prediction. The tutorial uses real model weights and intermediate outputs, with numerical checks to connect the calculations to the architecture.
 
 <p align="center">
-  <img src="model_scheme.jpg" width="650" alt="Vision Transformer architecture">
+  <img src="assets/model_scheme.jpg" width="650" alt="Vision Transformer architecture">
 </p>
 <p align="center"><em>Vision Transformer architecture, based on Dosovitskiy et al. (2021).</em></p>
 
@@ -11,8 +11,8 @@ A step-by-step Jupyter notebook showing how a pretrained Vision Transformer (ViT
 
 The notebook follows the ViT forward pass in the order shown in the diagram:
 
-1. **Image preparation:** Load an image and inspect the processed 224 × 224 input and its 196 patches.
-2. **Patch selection:** Select and enlarge a 16 × 16 patch.
+1. **Image preparation:** Load an image and inspect the processed 224 Ã— 224 input and its 196 patches.
+2. **Patch selection:** Select and enlarge a 16 Ã— 16 patch.
 3. **Patch projection:** Examine pixel values and reproduce a learned patch embedding using the model's actual projection weights.
 4. **CLS and positional embeddings:** Construct the 197 input tokens and compare them with the model's output.
 5. **Self-attention:** Calculate queries, keys, values, attention weights, and the attention output from the first encoder block.
@@ -29,8 +29,8 @@ The tutorial uses **[google/vit-base-patch16-224](https://huggingface.co/google/
 
 | Property | Value |
 |---|---|
-| Input size | 224 × 224 RGB |
-| Patch size | 16 × 16 |
+| Input size | 224 Ã— 224 RGB |
+| Patch size | 16 Ã— 16 |
 | Image patches | 196 |
 | Tokens including CLS | 197 |
 | Embedding dimension | 768 |
@@ -65,7 +65,7 @@ The image processor prepares the selected image for the model. You do not need t
 | File | Purpose |
 |---|---|
 | `VIT_Tutorial.ipynb` | Main tutorial |
-| `model_scheme.jpg` | Architecture diagram used in the introduction |
+| `assets/model_scheme.jpg` | Architecture diagram used in the introduction |
 | `cat.jpg`, `horse.jpg`, `lion.jpg` | Example images for the notebook |
 
 ## References
@@ -74,3 +74,4 @@ The image processor prepares the selected image for the model. You do not need t
 - Hugging Face. [ViT-Base/16 model and pretrained weights](https://huggingface.co/google/vit-base-patch16-224).
 
 The architecture diagram is based on the original ViT paper. Refer to the paper for the original architecture and research results.
+
