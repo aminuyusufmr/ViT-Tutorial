@@ -3,7 +3,7 @@
 A step-by-step Jupyter notebook showing how a pretrained Vision Transformer (ViT) processes an image, from its pixels to an ImageNet prediction. The tutorial uses real model weights and intermediate outputs, with numerical checks to connect the calculations to the architecture.
 
 <p align="center">
-  <img src="model_scheme.jpg" width="650" alt="Vision Transformer architecture">
+  <img src="assets/model_scheme.jpg" width="650" alt="Vision Transformer architecture">
 </p>
 <p align="center"><em>Vision Transformer architecture, based on Dosovitskiy et al. (2021).</em></p>
 
