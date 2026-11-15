@@ -21,7 +21,7 @@ The notebook follows the ViT forward pass in the order shown in the diagram:
 8. **Image classification:** Use the pretrained classification head to display the top five ImageNet predictions.
 9. **Attention rollout:** Visualize CLS-to-patch attention propagated across encoder layers.
 
-The notebook checks the manually calculated patch projection and first-block attention output against the pretrained model. Attention visualizations describe token interactions; they are not proofs of which image regions caused a prediction.
+The notebook checks the manually calculated patch projection and first-block attention output against the pretrained model.
 
 ## Model
 
@@ -53,7 +53,7 @@ The model weights are **not included** in this repository. Hugging Face Transfor
 4. In Section 2, set `image_path` to the filename of an image in the notebook directory, for example:
 
    ```python
-   image_path = "cat.jpg"
+   image_path = "horse.jpg"
    ```
 
 5. Run the cells in order. An internet connection is needed the first time the pretrained model is downloaded.
